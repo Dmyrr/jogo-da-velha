@@ -1,0 +1,46 @@
+#game {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 800px;
+
+}
+
+#game>div {
+    margin: 0;
+    padding: 0;
+}
+
+#game>div:hover {
+    cursor: pointer;
+}
+
+#game>div:active {
+    cursor: grabbing;
+}
+
+.casa {
+    display: block;
+    background-color: #07070780;
+    box-shadow: inset 0 0 0.5em #00ffff, 0 0 0.4em #00ffff;
+    width: clamp(40px, 45px + 5vw, 150px);
+    height: clamp(40px, 45px + 5vw, 150px);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 60%;
+}
+
+#jogoDaVelha {
+    margin: 5vh auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.vencedor {
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+.vencedor > span {
+    color: #00ffff;
+}
